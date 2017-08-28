@@ -1,0 +1,19 @@
+script:
+  class: File
+  path: scripts/BRDs.METABRIC.R
+metabric:
+  class: File
+  path: Complete_METABRIC_Clinical_Expr_Surv.RData
+
+##below are user defined args
+##first col specifies genes
+##second col specifies args to match: colname;operator;pattern
+##third col is variables used as covaraites
+##fields tab separated, terms within comma separated
+
+##genes \t match_args \t variables_used
+##BRD2,BRD3,BRD4 \t histological_type;==;ILC \t age,sex
+
+argsin:
+  class: File
+  path: scripts/BRDs.userargs.txt

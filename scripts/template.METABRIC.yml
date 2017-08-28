@@ -1,0 +1,22 @@
+script:
+  class: File
+  path: scripts/template.METABRIC.R
+
+##NB: METABRIC data from: https://www.synapse.org/#!Synapse:syn1688369/wiki/27311
+##requires authorization
+metabric:
+  class: File
+  path: Complete_METABRIC_Clinical_Expr_Surv.RData
+
+##below are user defined args
+##first col specifies genes
+##second col specifies args to match: colname;operator;pattern
+##third col is variables used as covaraites
+##fields tab separated, terms within comma separated
+
+##genes \t match_args \t variables_used
+##BRD2,BRD3,BRD4 \t histological_type;==;ILC \t age,sex
+
+userargs:
+  class: File
+  path: /store2/bmoran/METABRIC_Docker/scripts/userargs.txt

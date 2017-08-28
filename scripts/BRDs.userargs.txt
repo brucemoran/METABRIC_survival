@@ -1,0 +1,2 @@
+GENE	match_args	variables_used
+BRD2,BRD3,BRD4	histological_type;==;ILC	age_at_diagnosis,size,lymph_nodes_positive,grade
