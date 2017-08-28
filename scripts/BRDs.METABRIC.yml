@@ -1,6 +1,6 @@
 script:
   class: File
-  path: scripts/BRDs.METABRIC.R
+  path: BRDs.METABRIC.R
 metabric:
   class: File
   path: Complete_METABRIC_Clinical_Expr_Surv.RData
@@ -16,4 +16,4 @@ metabric:
 
 argsin:
   class: File
-  path: scripts/BRDs.userargs.txt
+  path: BRDs.userargs.txt
